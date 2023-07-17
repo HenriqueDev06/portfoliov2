@@ -27,7 +27,6 @@ export const Container = styled.section`
     font-size: 80px;
     line-height: 0.9;
     font-weight: bolder;
-    font-family: "BOLDS";
     text-transform: uppercase;
   }
 

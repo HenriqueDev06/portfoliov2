@@ -23,7 +23,6 @@ export const Container = styled.section`
     font-size: 80px;
     line-height: 1.1;
     font-weight: bolder;
-    font-family: "BOLDS";
     text-transform: uppercase;
   }
 
