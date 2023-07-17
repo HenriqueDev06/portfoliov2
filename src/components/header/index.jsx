@@ -40,10 +40,10 @@ const Header = () => {
         handleLeaveLink={handleLeaveLink}
       />
       <Content
-        // onMouseEnter={handleInfoHover}
-        // onMouseLeave={handleInfoLeave}
-        // onTouchStart={handleInfoHover}
-        // onTouchEnd={handleInfoLeave}
+        onMouseEnter={handleInfoHover}
+        onMouseLeave={handleInfoLeave}
+        onTouchStart={handleInfoHover}
+        onTouchEnd={handleInfoLeave}
         className="content-header"
       >
         <p>OI 👋, EU SOU</p>
