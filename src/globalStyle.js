@@ -9,6 +9,9 @@ export default createGlobalStyle`
         outline: none;
         border: 0;
     }
+    h1{
+      font-family: 'Boldstrom' !important;
+    }
     html, body{
         overflow-x: hidden;
         width: 100%;

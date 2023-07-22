@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { Container, Content } from "./styles";
 
 import ScrollIndicator from "../scrollDown";
@@ -6,20 +6,21 @@ import NavBar from "../navbar";
 
 const Header = () => {
   const containerRef = useRef(null);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   const handleInfoHover = () => {
     if (containerRef.current) {
       containerRef.current.style.backgroundSize = "150%";
+      setIsAnimating(true);
     }
   };
 
   const handleInfoLeave = () => {
     if (containerRef.current) {
       containerRef.current.style.backgroundSize = "100%";
+      setIsAnimating(false);
     }
   };
-
-  //
 
   const handleHoverLink = () => {
     if (containerRef.current) {
@@ -34,7 +35,7 @@ const Header = () => {
   };
 
   return (
-    <Container ref={containerRef}>
+    <Container ref={containerRef} isAnimating={isAnimating}>
       <NavBar
         handleHoverLink={handleHoverLink}
         handleLeaveLink={handleLeaveLink}
@@ -53,7 +54,7 @@ const Header = () => {
         </div>
         <p id="info">Designer + Desenvolvedor</p>
       </Content>
-      {/* <ScrollIndicator /> */}
+      <ScrollIndicator />
     </Container>
   );
 };
