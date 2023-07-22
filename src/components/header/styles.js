@@ -101,7 +101,7 @@ export const Content = styled.div`
 
   @media (max-width: 768px) {
     h1 {
-      font-size: 80px;
+      font-size: 70px;
     }
   }
 `;

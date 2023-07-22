@@ -11,14 +11,14 @@ const Header = () => {
   const handleInfoHover = () => {
     if (containerRef.current) {
       containerRef.current.style.backgroundSize = "150%";
-      setIsAnimating(true);
+      // setIsAnimating(true);
     }
   };
 
   const handleInfoLeave = () => {
     if (containerRef.current) {
       containerRef.current.style.backgroundSize = "100%";
-      setIsAnimating(false);
+      // setIsAnimating(false);
     }
   };
 
